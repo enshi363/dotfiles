@@ -1,0 +1,26 @@
+import = [
+"~/.config/alacritty/themes/dracula.toml"
+]
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12
+normal.family = "JetBrainsMono Nerd Font Mono"
+
+
+[window]
+opacity = 0.95
+
+[window.padding]
+x = 8 
+y = 8
+
+[scrolling]
+history = 2000
+
+[keyboard]
+bindings = [
+{key = "N", mods = "Control|Shift", action = "CreateNewWindow"},
+{key = "Enter", mods = "Alt", action = "ToggleMaximized"},
+]
