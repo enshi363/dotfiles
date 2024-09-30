@@ -2,6 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+set -x pure_enable_container_detetion false
+
 set -x PUB_HOSTED_URL "https://pub.flutter-io.cn"
 set -x FLUTTER_STORAGE_BASE_URL "https://storage.flutter-io.cn"
 
