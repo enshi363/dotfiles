@@ -1,44 +1,27 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
+-- Customize Treesitter
+
+---@type LazySpec
 return {
-{
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "bash",
-        "html",
-        "javascript",
-        "json",
-        "lua",
-        "markdown",
-        "markdown_inline",
-        "python",
-        "query",
-        "regex",
-        "tsx",
-        "typescript",
-        "vim",
-        "yaml",
-        "go",
-        "php",
-        "rust",
-        "css",
-        "dockerfile",
-        "tsx",
-        "typescript"
-      },
-    },
-  },
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "flake8",
-        "gopls",
-        "typescript-language-server",
-        "intelephense",
-      },
+  "nvim-treesitter/nvim-treesitter",
+  opts = {
+    ensure_installed = {
+      "lua",
+      "vim",
+      "go",
+      "php",
+      "html",
+      "json",
+      "markdown",
+      "javascript",
+      "toml",
+      "typescript",
+      "vue",
+      "yaml",
+      "xml",
+      "css",
+      -- add more arguments for adding more treesitter parsers
     },
   },
 }
