@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Mason plugins
 
@@ -12,7 +12,7 @@ return {
       ensure_installed = {
         "lua_ls",
         -- "gopls",
-        -- "intelephense",
+        "intelephense",
         -- "volar",
         -- add more arguments for adding more language servers
       },
