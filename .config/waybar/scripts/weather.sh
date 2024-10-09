@@ -1,16 +1,17 @@
 #!/bin/sh
-BSSIDS="$(nmcli device wifi list |
-    awk 'NR>1 {if ($1 != "*") {print $1}}' |
-    tr -d ":" |
-    tr "\n" ",")"
-
-LOC=""
-REQUEST_GEO="$(wget -qO - http://openwifi.su/api/v1/bssids/"$BSSIDS")"
-if [[ "$(jq ".count_results" <<< "$REQUEST_GEO")" -gt 0 ]] ; then
-    LAT="$(jq ".lat" <<< "$REQUEST_GEO")"
-    LON="$(jq ".lon" <<< "$REQUEST_GEO")"
-    LOC="$LAT,$LON"
-fi
+# BSSIDS="$(nmcli device wifi list |
+#     awk 'NR>1 {if ($1 != "*") {print $1}}' |
+#     tr -d ":" |
+#     tr "\n" ",")"
+#
+# LOC=""
+# REQUEST_GEO="$(wget -qO - http://openwifi.su/api/v1/bssids/"$BSSIDS")"
+# if [[ "$(jq ".count_results" <<< "$REQUEST_GEO")" -gt 0 ]] ; then
+#     LAT="$(jq ".lat" <<< "$REQUEST_GEO")"
+#     LON="$(jq ".lon" <<< "$REQUEST_GEO")"
+#     LOC="$LAT,$LON"
+# fi
+LOC="Shanghai"
 
 text="$(curl -s "https://wttr.in/$LOC?format=1" | sed 's/ //g')"
 tooltip="$(curl -s "https://wttr.in/$LOC?0QT" |
