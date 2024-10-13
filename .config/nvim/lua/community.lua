@@ -10,6 +10,8 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.colorscheme.dracula-nvim" },
+  -- { import = "astrocommunity.colorscheme.dracula-nvim" },
+  -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
   -- import/override with your plugins folder
 }
