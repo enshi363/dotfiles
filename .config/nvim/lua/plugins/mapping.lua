@@ -1,3 +1,10 @@
+local opt = {
+  noremap = true,
+  silent = true,
+}
+vim.api.nvim_set_keymap("n", "<S-TAB>", ":bprevious<CR>", opt)
+vim.api.nvim_set_keymap("n", "<TAB>", ":bnext<CR>", opt)
+-- vim.api.nvim_set_keymap("n", "<leader>x", ":bd<CR>", opt)
 return {
   {
     "AstroNvim/astrocore",
