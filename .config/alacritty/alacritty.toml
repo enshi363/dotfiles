@@ -1,4 +1,4 @@
-import = [
+general.import = [
 "~/.config/alacritty/themes/catppuccin-macchiato.toml"
 ]
 [env]
@@ -11,7 +11,8 @@ normal.family = "Comic Shanns Mono Nerd Font"
 
 
 [window]
-#opacity = 0.95
+opacity = 0.95
+#decorations="None"
 
 [window.padding]
 x = 8 
