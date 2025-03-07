@@ -28,6 +28,7 @@ return {
           -- "python",
           "yaml",
           "php",
+          "html",
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
