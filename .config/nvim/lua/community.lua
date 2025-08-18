@@ -11,6 +11,7 @@ return {
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.fuzzy-finder/telescope-nvim" },
   -- { import = "astrocommunity.colorscheme.dracula-nvim" },
   -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
   -- { import = "astrocommunity.colorscheme.catppuccin" },
