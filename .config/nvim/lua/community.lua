@@ -16,5 +16,6 @@ return {
   -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.recipes.ai" },
   -- import/override with your plugins folder
 }
