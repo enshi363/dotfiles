@@ -1,22 +1,23 @@
 general.import = [
-"~/.config/alacritty/themes/catppuccin-macchiato.toml"
+"~/.config/alacritty/themes/tokyo-night.toml"
 ]
 [env]
 TERM = "xterm-256color"
 
 [font]
-size = 12
+size = 16
 # normal.family = "JetBrainsMono Nerd Font Mono"
-normal.family = "Comic Shanns Mono Nerd Font"
+normal.family = "ComicShannsMono Nerd Font"
 
 
 [window]
 opacity = 0.95
 #decorations="None"
+#decorations="Transparent"
 
 [window.padding]
 x = 8 
-y = 8
+y = 8 
 
 [scrolling]
 history = 2000
@@ -24,5 +25,7 @@ history = 2000
 [keyboard]
 bindings = [
 {key = "N", mods = "Control|Shift", action = "CreateNewWindow"},
-{key = "Enter", mods = "Alt", action = "ToggleMaximized"},
+{key = "Enter", mods = "Command", action = "ToggleMaximized"},
+{key = "Enter", mods = "Command|Shift", action = "ToggleFullScreen"},
+{key = "T", mods = "Command", action = "None"},
 ]
