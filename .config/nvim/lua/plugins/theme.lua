@@ -17,7 +17,7 @@ return {
     name = "catppuccin",
     priority = 1000,
     opts = {
-      flavour = "frappe",
+      flavour = "macchiato",
       lsp_styles = {
         underlines = {
           errors = { "undercurl" },
@@ -68,7 +68,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-frappe",
+      colorscheme = "catppuccin-macchiato",
     },
   },
 }
