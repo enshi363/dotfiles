@@ -22,25 +22,51 @@
 # selection-background = 44495d
 # selection-foreground = c6d0f5
 
-palette = 0=#494d64
-palette = 1=#ed8796
-palette = 2=#a6da95
-palette = 3=#eed49f
-palette = 4=#8aadf4
-palette = 5=#f5bde6
-palette = 6=#8bd5ca
-palette = 7=#a5adcb
-palette = 8=#5b6078
-palette = 9=#ed8796
-palette = 10=#a6da95
-palette = 11=#eed49f
-palette = 12=#8aadf4
-palette = 13=#f5bde6
-palette = 14=#8bd5ca
-palette = 15=#b8c0e0
-background = 24273a
-foreground = cad3f5
-cursor-color = f4dbd6
-cursor-text = 181926
-selection-background = 3a3e53
-selection-foreground = cad3f5
+# catppuccin-machiato
+# palette = 0=#494d64
+# palette = 1=#ed8796
+# palette = 2=#a6da95
+# palette = 3=#eed49f
+# palette = 4=#8aadf4
+# palette = 5=#f5bde6
+# palette = 6=#8bd5ca
+# palette = 7=#a5adcb
+# palette = 8=#5b6078
+# palette = 9=#ed8796
+# palette = 10=#a6da95
+# palette = 11=#eed49f
+# palette = 12=#8aadf4
+# palette = 13=#f5bde6
+# palette = 14=#8bd5ca
+# palette = 15=#b8c0e0
+# background = 24273a
+# foreground = cad3f5
+# cursor-color = f4dbd6
+# cursor-text = 181926
+# selection-background = 3a3e53
+# selection-foreground = cad3f5
+
+
+#tokyo night 
+palette = 0=#1b1d2b
+palette = 1=#ff757f
+palette = 2=#c3e88d
+palette = 3=#ffc777
+palette = 4=#82aaff
+palette = 5=#c099ff
+palette = 6=#86e1fc
+palette = 7=#828bb8
+palette = 8=#444a73
+palette = 9=#ff8d94
+palette = 10=#c7fb6d
+palette = 11=#ffd8ab
+palette = 12=#9ab8ff
+palette = 13=#caabff
+palette = 14=#b2ebff
+palette = 15=#c8d3f5
+
+background = #222436
+foreground = #c8d3f5
+cursor-color = #c8d3f5
+selection-background = #2d3f76
+selection-foreground = #c8d3f5
