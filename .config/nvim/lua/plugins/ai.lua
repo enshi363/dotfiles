@@ -72,29 +72,4 @@ return {
   { "nvim-lua/plenary.nvim" },
   -- optional, if you are using virtual-text frontend, nvim-cmp is not
   -- required.
-  {
-    "hrsh7th/nvim-cmp",
-    -- config = function()
-    --   require("nvim-cmp").setup({
-    --     sources = {
-    --       {
-    --         -- Include minuet as a source to enable autocompletion
-    --         { name = "minuet" },
-    --         -- and your other sources
-    --       },
-    --     },
-    --     performance = {
-    --       -- It is recommended to increase the timeout duration due to
-    --       -- the typically slower response speed of LLMs compared to
-    --       -- other completion sources. This is not needed when you only
-    --       -- need manual completion.
-    --       fetching_timeout = 2000,
-    --     },
-    --     mapping = {
-    --       ["M-y"] = require("minuet").make_cmp_map(),
-    --       -- and your other keymappings
-    --     },
-    --   })
-    -- end,
-  },
 }
