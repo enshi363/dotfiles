@@ -9,10 +9,11 @@ return {
         -- Your configuration options here
         -- provider = "openai_fim_compatible",
         provider = "openai_compatible",
-        n_completions = 1,
+        n_completions = 3,
         context_window = 16000,
-        after_cursor_filter_length = 1024,
-        before_cursor_filter_length = 1024,
+        context_ratio = 0.75,
+        after_cursor_filter_length = 15,
+        before_cursor_filter_length = 2,
         provider_options = {
           openai_compatible = {
             -- For Windows users, TERM may not be present in environment variables.
@@ -31,8 +32,8 @@ return {
             stream = true,
             optional = {
               max_tokens = nil,
-              stop = nil,
-              -- stop = { "\n\n" },
+              -- stop = nil,
+              stop = { "\n\n" },
             },
             template = {
               prompt = function(context_before_cursor, context_after_cursor, _)
@@ -51,7 +52,8 @@ return {
         -- },
 
         virtualtext = {
-          auto_trigger_ft = { "go", "php", "typescript" },
+          -- auto_trigger_ft = { "go", "php", "typescript" },
+          auto_trigger_ft = { "*" },
           keymap = {
             -- accept whole completion
             accept = "<C-a>",
@@ -66,6 +68,7 @@ return {
             next = "<C-]>",
             dismiss = "<C-d>",
           },
+          show_on_completion_menu = true,
         },
       })
     end,
