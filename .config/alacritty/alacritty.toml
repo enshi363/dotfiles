@@ -13,7 +13,9 @@ normal.family = "ComicShannsMono Nerd Font"
 [window]
 opacity = 0.95
 #decorations="None"
-#decorations="Transparent"
+decorations="Transparent"
+#decorations="Buttonless"
+dynamic_padding = true
 
 [window.padding]
 x = 8 
