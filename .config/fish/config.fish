@@ -7,10 +7,7 @@ set -x pure_enable_container_detetion false
 set -x PUB_HOSTED_URL "https://pub.flutter-io.cn"
 set -x FLUTTER_STORAGE_BASE_URL "https://storage.flutter-io.cn"
 
-function fish_greeting
-    clear
-end
-#set -U fish_greeting ""
+set -g fish_greeting ""
 set -x TMUX_TMPDIR $HOME/.config/tmux/tmp
 
 set -x GO111MODULE on
