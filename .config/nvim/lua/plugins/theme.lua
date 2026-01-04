@@ -1,15 +1,34 @@
 return {
-  "folke/tokyonight.nvim",
-  lazy = true,
-  opts = {
-    transparent = true,
-    style = "moon",
-    styles = {
-      sidebars = "transparent",
-      floats = "transparent",
-    },
-  },
+  "maxmx03/solarized.nvim",
+  lazy = false,
+  priority = 1000,
+  ---@type solarized.config
+  opts = {},
+  config = function(_, opts)
+    opts = {
+      transparent = {
+        enabled = true,
+      },
+    }
+    vim.o.termguicolors = true
+    vim.o.background = "light"
+    require("solarized").setup(opts)
+    vim.cmd.colorscheme("solarized")
+  end,
 }
+-- return {
+--   "folke/tokyonight.nvim",
+--   lazy = true,
+--   opts = {
+--     transparent = true,
+--     style = "moon",
+--     styles = {
+--       sidebars = "transparent",
+--       floats = "transparent",
+--     },
+--   },
+-- }
+
 --
 -- return {
 --   "navarasu/onedark.nvim",
