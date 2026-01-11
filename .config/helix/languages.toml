@@ -1,0 +1,18 @@
+[[language]]
+name = "vue"
+scope = "source.vue"
+injection-regex = "vue"
+file-types = ["vue"]
+language-servers = ["vue-language-server", "typescript-language-server"]
+auto-format = true # Enable auto-formatting if desired
+
+[language-server.vue-language-server]
+command = "npx" # Use 'npx' to resolve the locally installed package
+args = ["@vue/language-server", "--stdio"]
+
+[[language-server.typescript-language-server.config.plugins]]
+name = "@vue/typescript-plugin"
+location = "/usr/local/lib/node_modules/@vue/typescript-plugin"
+# location = "@vue/language-server" # Location doesn't matter much; it falls back to project's node_modules
+languages = ["vue"]
+

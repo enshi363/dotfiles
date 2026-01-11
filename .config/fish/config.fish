@@ -24,6 +24,9 @@ set -x HOMEBREW_INSTALL_FROM_API 1
 set -Ua fish_user_paths $HOME/go/bin/
 set -Ua fish_user_paths /opt/homebrew/bin
 
+set --universal nvm_default_version lts/jod
+set --universal nvm_default_packages typescript-language-server typescript vscode-langservers-extracted prettier
+
 if test -f $HOME/.config/custom.fish
     source $HOME/.config/custom.fish
 end
