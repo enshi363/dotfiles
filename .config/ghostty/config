@@ -1,3 +1,19 @@
+font-family = "ComicShannsMono Nerd Font"
+font-size = 16
+mouse-hide-while-typing = true 
+scrollback-limit = 10000
+shell-integration = fish 
+#shell-integration-features = true
+
+keybind = super+h=goto_split:left
+keybind = super+j=goto_split:bottom
+keybind = super+k=goto_split:top
+keybind = super+l=goto_split:right
+
+window-save-state = always
+
+
+
 # catppuccin-frappe
 # palette = 0=#51576d
 # palette = 1=#e78284
