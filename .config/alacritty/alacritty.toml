@@ -2,6 +2,8 @@ general.import = [
 #"~/.config/alacritty/themes/tokyo-night.toml"
 #"~/.config/alacritty/themes/solarized_light.toml"
 "~/.config/alacritty/themes/github_dark.toml"
+#"~/.config/alacritty/themes/solarized_dark.toml"
+#"~/.config/alacritty/themes/nord.toml"
 ]
 [env]
 TERM = "xterm-256color"
@@ -14,11 +16,11 @@ normal.family = "JetBrainsMono Nerd Font Mono"
 
 [window]
 opacity = 0.95
-decorations="None"
+#decorations="None"
 #decorations="Transparent"
-#decorations="Buttonless"
+decorations="Buttonless"
 dynamic_padding = true
-blur=true
+blur=false
 
 [window.padding]
 x = 8 
