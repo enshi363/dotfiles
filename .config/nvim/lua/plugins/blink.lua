@@ -24,9 +24,9 @@ return {
                     icon = dev_icon
                   end
                 else
-                  icon = require("lspkind").symbolic(ctx.kind, {
-                    mode = "symbol_text",
-                  })
+                  -- icon = require("lspkind").symbolic(ctx.kind, {
+                  --   mode = "symbol_text",
+                  -- })
                 end
 
                 return icon .. ctx.icon_gap

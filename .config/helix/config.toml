@@ -1,5 +1,5 @@
-#theme="nord"
-theme="solarized_light"
+theme="nord"
+#theme="solarized_light"
 [editor]
 true-color = true
 cursorline = true
