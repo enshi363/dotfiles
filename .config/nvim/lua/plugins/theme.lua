@@ -8,31 +8,31 @@
 --     vim.cmd("colorscheme github_light")
 --   end,
 -- }
--- return {
---   "maxmx03/solarized.nvim",
---   lazy = false,
---   priority = 1000,
---   ---@type solarized.config
---   opts = {},
---   config = function(_, opts)
---     opts = {
---       transparent = {
---         enabled = true,
---       },
---       variant = "autumn"
---     }
---     vim.o.termguicolors = true
---     vim.o.background = "dark"
---     require("solarized").setup(opts)
---     vim.cmd.colorscheme("solarized")
---   end,
--- }
 return {
-  "shaunsingh/nord.nvim",
+  "maxmx03/solarized.nvim",
+  lazy = false,
+  priority = 1000,
+  ---@type solarized.config
+  opts = {},
   config = function(_, opts)
-    vim.cmd.colorscheme("nord")
+    opts = {
+      transparent = {
+        enabled = true,
+      },
+      variant = "autumn",
+    }
+    vim.o.termguicolors = true
+    vim.o.background = "light"
+    require("solarized").setup(opts)
+    vim.cmd.colorscheme("solarized")
   end,
 }
+-- return {
+--   "shaunsingh/nord.nvim",
+--   config = function(_, opts)
+--     vim.cmd.colorscheme("nord")
+--   end,
+-- }
 -- return {
 --   "folke/tokyonight.nvim",
 --   lazy = true,
